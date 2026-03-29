@@ -1,0 +1,10 @@
+/* global styles */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/* end global styles */
+body{
+    font-family: work sans, sans-serif;
+}
