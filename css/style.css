@@ -1,3 +1,8 @@
+/* variables */
+:root {
+    --main-color:#10cab7;
+}
+
 /* global styles START */
 *{
     box-sizing: border-box;
@@ -84,7 +89,7 @@ body{
 }
 .header .container .links .icon:hover {
     cursor: pointer;
-    filter: drop-shadow(0 0 2px rgba(108, 192, 180, 0.5));
+    transform: scale(1.1);
 }
 .header .links ul{
     opacity: 0;
@@ -135,6 +140,53 @@ body{
     border-radius: 2px;
 }
 /* Header styles END */
+
+/* Landing Section Styles */
+.landing{
+    background-image: url(/assets/yasmin-peyman-v20xUKKXylY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 62px );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-text {
+    width: 500px;
+    max-width: 100%;
+    text-align: center;
+    padding: 100px 20px;
+}
+.intro-text h1 {
+    margin: 0;
+    font-size: 48px;
+    color: var(--main-color);
+    font-weight: 800;
+}
+.intro-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    font-weight: 400;
+    color: white;
+    margin-bottom: 30px;
+}
+.intro-text .btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--main-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    font-weight: 600;
+    transition: background-color 0.3s ease-in-out, color 0.8s ease-in-out, transform 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+.intro-text .btn:hover {
+    background-color: #ffffff00;
+    color: var(--main-color);
+    transform: scale(1.1);
+    border: 1px solid var(--main-color);
+}
 
 
 
