@@ -1,14 +1,9 @@
-/* global styles */
+/* global styles START */
 *{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 body{
     font-family: work sans, sans-serif;
-}
-.parent{
-    background-color: #1eb403;
 }
 .container{
     padding-left:15px;
@@ -17,7 +12,7 @@ body{
     margin-right: auto;
 }
 /* small */
-@media (max-width: 768px){
+@media (min-width: 768px){
     .container{
         width: 750px;
     }
@@ -34,28 +29,34 @@ body{
         width: 1170px;
     }
 }
-/* end global styles */
+/* global styles END */
 
-/* header styles */
+/* Header styles START */
 .header{
     padding: 20px;
 }
-
 .header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .header .container .logo {
-    width: 60px;
+    display: block;
+    transform-origin: center;
+    transition: 0.3s;
+    width: 80px;
 }
-
+.header .container .logo:hover {
+    filter: drop-shadow(0 0 2px rgba(108, 192, 180, 0.5));
+    cursor: pointer;
+    position: sticky;
+    transform: scale(1.1);
+}
 .header .container .links {
     position: relative;
 }
 .header .container .links .icon {
-    width: 30px;
+    width:30px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -67,23 +68,19 @@ body{
     margin-bottom: 5px;
     height: 3px;
 }
-
 .header .container .links .icon span:first-child {
     height: 3px;
     width: 100%;
 }
-
 .header .container .links .icon span:nth-child(2) {
     height: 3px;
     width: 50%;
     transition: 0.3s;
 }
-
 .header .container .links .icon span:last-child {
     height: 3px;
     width: 100%;
 }
-
 .header .container .links .icon:hover span:nth-child(2) {
     width: 100%;
 }
@@ -112,11 +109,9 @@ body{
     right: 5px;
     top: -18px
 }
-
 .header .links:hover ul {
     display: block;
 }
-
 .header .links ul a{
     display: block;
     padding: 10px;
@@ -127,16 +122,14 @@ body{
 .header .links ul a:hover{
     padding-left: 25px;
 }
-
 .header .links ul a:hover {
     color: #6cc0b4;
 }
-
 .header .links ul li:not(:last-child) a {
     border-bottom: 0.6px solid #ddd;
     border-radius: 2px;
 }
-
+/* Header styles END */
 
 
 
