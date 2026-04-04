@@ -38,7 +38,10 @@ body{
 
 /* Header styles START */
 .header{
+    position: sticky;
+    top: 0;
     padding: 15px;
+    background-color: #f6f6f6;
 }
 .header .container{
     display: flex;
@@ -141,7 +144,7 @@ body{
 }
 /* Header styles END */
 
-/* Landing Section Styles */
+/* Landing Section Styles START */
 .landing{
     background-image: url(/assets/yasmin-peyman-v20xUKKXylY-unsplash.jpg);
     background-size: cover;
@@ -150,14 +153,16 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: -1;
 }
 .intro-text {
-    width: 500px;
+    width: 700px;
     max-width: 100%;
     text-align: center;
     padding: 100px 20px;
 }
 .intro-text h1 {
+    letter-spacing: 2px;
     margin: 0;
     font-size: 48px;
     color: var(--main-color);
@@ -167,19 +172,25 @@ body{
     font-size: 18px;
     line-height: 1.8;
     font-weight: 400;
-    color: white;
+    color: rgb(255, 255, 255);
+    border-radius: 2px;
+    text-shadow: #10cab7 0px 0px 5px;
+    border: #10cab7 1px solid;
+    padding: 20px;
+    border-radius: 10px;
+    background-origin: padding-box;
     margin-bottom: 30px;
 }
 .intro-text .btn {
     display: inline-block;
     padding: 12px 30px;
     background-color: var(--main-color);
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
     border-radius: 10px;
     border: 1px solid transparent;
     font-weight: 600;
-    transition: background-color 0.3s ease-in-out, color 0.8s ease-in-out, transform 0.3s ease-in-out, border 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, transform 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 .intro-text .btn:hover {
     background-color: #ffffff00;
@@ -187,6 +198,17 @@ body{
     transform: scale(1.1);
     border: 1px solid var(--main-color);
 }
+/* landing section styles END */
+
+/* features section styles START */
+.features{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+
+/* features section styles END */
+
 
 
 
