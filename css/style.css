@@ -288,6 +288,12 @@ i{
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 0;
 }
+.services .container-services .service-content .service .icon {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
 .services .container-services .service-content .service:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px  rgba(16, 202, 183, 0.5);
@@ -295,7 +301,6 @@ i{
         color: var(--main-color)
     }
 }
-
 /* services section styles START */
 
 
