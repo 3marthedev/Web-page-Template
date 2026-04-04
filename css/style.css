@@ -69,58 +69,58 @@ body{
     padding: 15px;
     background-color: #f6f6f6;
 }
-.header .container{
+.header .container-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.header .container .logo {
+.header .container-header .logo {
     display: block;
     transform-origin: center;
     transition: 0.3s;
     width: 80px;
 }
-.header .container .logo:hover {
+.header .container-header .logo:hover {
     filter: drop-shadow(0 0 2px rgba(108, 192, 180, 0.5));
     cursor: pointer;
     transform: scale(1.1);
 }
-.header .container .links {
+.header .container-header .links {
     position: relative;
 }
-.header .container .links .icon {
+.header .container-header .links .icon {
     width:30px;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
     transition: 0.3s;
 }
-.header .container .links .icon span {
+.header .container-header .links .icon span {
     background-color: black;
     margin-bottom: 5px;
     height: 3px;
 }
-.header .container .links .icon span:first-child {
+.header .container-header .links .icon span:first-child {
     height: 3px;
     width: 100%;
 }
-.header .container .links .icon span:nth-child(2) {
+.header .container-header .links .icon span:nth-child(2) {
     height: 3px;
     width: 50%;
     transition: 0.3s;
 }
-.header .container .links .icon span:last-child {
+.header .container-header .links .icon span:last-child {
     height: 3px;
     width: 100%;
 }
-.header .container .links .icon:hover span:nth-child(2) {
+.header .container-header .links .icon:hover span:nth-child(2) {
     width: 100%;
 }
-.header .container .links .icon:hover {
+.header .container-header .links .icon:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
-.header .links ul{
+.header .container-header .links ul{
     opacity: 0;
     visibility: hidden;
     transform: translateY(-8px);
@@ -136,7 +136,7 @@ body{
     min-width: 200px;
     border-radius: 5px;
 }
-.header .links ul li::before{
+.header .container-header .links ul li::before{
     content: "";
     border-width: 10px;
     position: absolute;
@@ -145,7 +145,7 @@ body{
     right: 5px;
     top: -18px
 }
-.header .links:hover ul {
+.header .container-header .links:hover ul {
     visibility: visible;
     transform: translateY(0);
     pointer-events: auto;
@@ -186,7 +186,6 @@ body{
     max-width: 100%;
     text-align: center;
     padding: 100px 20px;
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1), 0px 0px 2px rgba(0, 0, 0, 0.1), 0px 0px 3px rgba(0, 0, 0, 0.1);
 }
 .intro-text h1 {
     letter-spacing: 2px;
@@ -224,11 +223,10 @@ body{
 /* features section styles START */
 .features{
     margin-top: 20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 20px;
     background-color: #f6f6f6;
 }
-.features .container{
+.features .container-features{
     margin-top: 10px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
@@ -268,31 +266,29 @@ i{
     }
 }
 /* features section styles END */
-.services .container{
-    padding-right: 0;
-    padding-left: 0;
+.services .service-content{
+    padding: 50px 20px;
 }
-.services .container .service-content{
+.services .container-services .service-content{
     margin-top: 20px;
     margin-bottom: 20px;
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
     background-color: #f6f6f6;
+    text-align: start;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 0;
+}
+.services .container-services .service-content .service {
     padding: 20px;
     text-align: start;
     border-radius: 6px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     z-index: 0;
 }
-.services .container .service-content .service {
-    padding: 20px;
-    text-align: start;
-    border-radius: 6px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    z-index: 0;
-}
-.services .container .service-content .service:hover {
+.services .container-services .service-content .service:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 10px  rgba(16, 202, 183, 0.5);
     h2 , i {
