@@ -407,7 +407,7 @@ i{
     border-radius: 6px;
 }
 .contact .contact-form input,
-.contact .contact-form textarea:focus{
+.contact .contact-form textarea:hover{
     outline: 1px solid var(--main-color);
 }
 
@@ -430,6 +430,34 @@ i{
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, border 0.3s ease;
 }
 /* contact section styles END */
+/* Copyright section styles START */
+.copyright{
+    padding: 20px 0;
+    background-color: #f6f6f6;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+}
+.copyright-container{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.copyright .copyright-container i {
+    font-size: 20px;
+    color: #666;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.copyright .copyright-container i:hover {
+    color: var(--main-color);
+    transform: translateY(-2px);
+}
+/* Copyright section styles END */
 
 
 
