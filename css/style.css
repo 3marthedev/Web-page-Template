@@ -67,7 +67,7 @@ html {
         letter-spacing: -3px;
     }
     .special-heading + p {
-        margin-top: -20px;
+        margin-top: -35px;
         font-size: 16px;
     }
 }
@@ -198,16 +198,16 @@ html {
     padding: 100px 20px;
 }
 .intro-text h1 {
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin: 0;
     font-size: 48px;
     color: var(--main-color);
-    font-weight: 800;
+    font-weight: 900;
 }
 .intro-text p {
     margin: 20px 0;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     color: #333;
     padding: 10px;
 }
@@ -434,7 +434,8 @@ i{
 /* contact section styles END */
 /* Copyright section styles START */
 .copyright{
-    padding: 20px 0;
+    padding: 20px 20px;
+    margin-top: 40px;
     background-color: #f6f6f6;
     display: flex; 
     justify-content: center;
@@ -447,7 +448,6 @@ i{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 20px;
 }
 
 .copyright .copyright-container i {
